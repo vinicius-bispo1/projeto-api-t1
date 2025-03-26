@@ -2,10 +2,11 @@
 from flask import Flask, request, jsonify, render_template
 # Importa o módulo sqlite3 para interagir com o banco de dados SQLite.
 import sqlite3
+from flask_cors import CORS
 
 # Cria uma instância da aplicação Flask.
 app = Flask(__name__)
-
+CORS(app)
 # Função para inicializar o banco de dados SQLite.
 
 
